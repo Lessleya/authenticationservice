@@ -23,7 +23,10 @@ https.createServer({
 }, app).listen(port, async () =>{
     console.log("listening on port: "+port)
     await redisClient.connect();
+    console.log("it works!")
 })
+
+
 
 //validate password function
 const validatePassword = async(request,response) => {
